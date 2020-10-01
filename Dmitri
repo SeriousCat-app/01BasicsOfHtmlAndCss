@@ -1,0 +1,273 @@
+    
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Media-Queries</title>
+</head>
+<style>
+    body {
+
+        background-color: rgb(214, 186, 209);
+    }
+
+    .dd {
+
+        
+        width: 30%;
+        float:left;
+        
+        font-size: 1.5rem;
+       overflow: hidden;
+       
+        
+    }
+
+    .hh {
+
+       
+        
+        width: 30%;
+        float: center;
+        font-size: 1.5rem;
+        
+
+    }
+/*
+    .ff {
+
+        
+        width: 30%;
+        float: right;
+        font-size: 1.5rem;
+        
+    }
+*/
+
+
+    
+        
+
+
+    
+/*
+    .wrapper2 {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 200px;
+        grid-gap: 10px;
+        justify-content: center;
+        margin-left: 950px;
+        margin-top: 235px;
+
+
+    }
+
+    .wrapper3 {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 200px;
+        grid-gap: 10px;
+        justify-content: center;
+        margin-left: 680px;
+        margin-top: 460px;
+
+
+    }
+
+    .wrapper4 {
+        position: fixed;
+        display: grid;
+        
+        grid-template-columns: 100px 100px 100px 200px;
+        grid-gap: 10px;
+        justify-content: center;
+        margin-left: 950px;
+        margin-top: 460px;
+
+
+    }*/
+
+    .nav >a {
+
+display: block;
+float: left;
+padding: 10px;
+padding-top: 0;
+padding-left: 3px;
+
+font-size: 30px;
+color: rgb(70, 68, 68);
+letter-spacing: 2px;
+text-decoration: none;
+
+}
+
+        
+
+    
+
+    @media (max-width: 700px) {
+        nav >a {
+   float:none;
+    
+    width: 100%;
+    font-weight: 1500;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-decoration-line: none;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #0f0f0f;
+    
+
+
+}
+
+        .dd {
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: left;
+            padding: 3px;
+            
+
+
+        }
+        .hh{  
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: left;
+            padding: 3px;
+        }  
+
+        .wrapper1{  
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: left;
+            padding: 3px;
+        }  
+
+             
+        .ff {
+
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: left;
+            padding: 1px;
+
+}
+  /*.wrapper2{  
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: right;
+            padding: 3px;
+        }  
+
+        .wrapper3{  
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: left;
+            padding: 3px;
+        }  
+
+        .wrapper4{  
+            float: none;
+            width: 100%;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            text-decoration-line: none;
+            text-align: right;
+            padding: 3px;
+        }  */
+    
+   
+
+  
+}
+</style>
+
+<body>
+   
+    <nav class="nav">
+        <a href="a">First Link</a>
+        <a href="a">Second Link</a>
+        <a href="a">Third Link</a>
+        <a href="a">Fourth Link</a>
+     </nav>
+
+    
+    <div class="dd" >
+        <h2> Item1</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequatur voluptas nisi sunt accusamus nemo
+        nesciunt enim porro perferendis dicta harum suscipit sed explicabo ipsum odit. Maiores incidunt aspernatur
+        facilis!
+        Aliquam ipsum qui expedita ducimus, distinctio id ea quibusdam perspiciatis rem mollitia tenetur placeat, neque
+        dignissimos quasi doloremque reprehenderit tempore ut, aperiam! Suscipit dolore iure mollitia incidunt
+        laboriosam, sint blanditiis!
+
+    </div>
+
+
+
+<div style="overflow:auto">
+    <div class="hh">
+        <h2> Item2</h2>
+ 
+
+    <div class="wrapper1">
+        <img src="original.png" >
+    </div>
+   <!--<div class="wrapper2">
+        <img src="original.png" >
+    </div>
+    <div class="wrapper3">
+        <img src="original.png" >
+    </div>
+    <div class="wrapper4">
+        <img src="original.png" >
+    </div>
+
+
+
+
+
+    <div class="ff" >
+        <h2>Item3</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequatur voluptas nisi sunt accusamus
+        nemo nesciunt enim porro perferendis dicta harum suscipit sed explicabo ipsum odit. Maiores incidunt
+        aspernatur facilis!
+        Aliquam ipsum qui expedita ducimus, distinctio id ea quibusdam perspiciatis rem mollitia tenetur placeat,
+        neque dignissimos quasi doloremque reprehenderit tempore ut, aperiam! Suscipit dolore iure mollitia incidunt
+        laboriosam, sint blanditiis!
+
+    </div>
+--> 
+</body>
+
+</html>
