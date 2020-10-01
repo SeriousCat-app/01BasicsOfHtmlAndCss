@@ -24,7 +24,7 @@
 
     .hh {
         width: 30%;
-        float: center;
+        float: left;
         font-size: 1.5rem;
 
     }
@@ -95,7 +95,7 @@
         }
 
         .hh {
-            float: none;
+            float: left;
             width: 100%;
             font-weight: 400;
             font-size: 2rem;
@@ -151,7 +151,7 @@
 
 
     <div style="overflow:hidden">
-        <div class="hh">
+        
             <h2> Item2</h2>
 
             <div class="wrapper">
