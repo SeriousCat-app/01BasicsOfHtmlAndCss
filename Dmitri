@@ -1,5 +1,4 @@
-    
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,118 +11,74 @@
         background-color: rgb(214, 186, 209);
     }
 
-    .dd {
+    nav {
+        overflow: hidden;
+    }
 
-        
+    .dd {
         width: 30%;
-        float:left;
-        
+        float: left;
         font-size: 1.5rem;
-       overflow: hidden;
-       
-        
+        overflow: hidden;
     }
 
     .hh {
-
-       
-        
         width: 30%;
         float: center;
         font-size: 1.5rem;
-        
 
     }
-/*
-    .ff {
 
-        
+    .wrapper {
+        display: grid;
+        grid-template-columns: 200px 150px;
+        grid-gap: 10px;
+        justify-content: left;
+    }
+
+    .ff {
         width: 30%;
         float: right;
         font-size: 1.5rem;
         
+        margin-top: 20px;
     }
-*/
 
+    .nav>a {
 
-    
-        
+        display: block;
+        float: left;
+        padding: 15px;
+        padding-top: 0;
+        padding-left: 3px;
 
-
-    
-/*
-    .wrapper2 {
-        position: fixed;
-        display: grid;
-        grid-template-columns: 100px 100px 100px 200px;
-        grid-gap: 10px;
-        justify-content: center;
-        margin-left: 950px;
-        margin-top: 235px;
-
+        font-size: 30px;
+        color: rgb(70, 68, 68);
+        letter-spacing: 2px;
+        text-decoration: none;
 
     }
 
-    .wrapper3 {
-        position: fixed;
-        display: grid;
-        grid-template-columns: 100px 100px 100px 200px;
-        grid-gap: 10px;
-        justify-content: center;
-        margin-left: 680px;
-        margin-top: 460px;
 
 
-    }
 
-    .wrapper4 {
-        position: fixed;
-        display: grid;
-        
-        grid-template-columns: 100px 100px 100px 200px;
-        grid-gap: 10px;
-        justify-content: center;
-        margin-left: 950px;
-        margin-top: 460px;
-
-
-    }*/
-
-    .nav >a {
-
-display: block;
-float: left;
-padding: 10px;
-padding-top: 0;
-padding-left: 3px;
-
-font-size: 30px;
-color: rgb(70, 68, 68);
-letter-spacing: 2px;
-text-decoration: none;
-
-}
-
-        
-
-    
 
     @media (max-width: 700px) {
-        nav >a {
-   float:none;
-    
-    width: 100%;
-    font-weight: 1500;
-    font-size: 4rem;
-    letter-spacing: 2px;
-    text-decoration-line: none;
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #0f0f0f;
-    
+        nav>a {
+            float: none;
+
+            width: 100%;
+            font-weight: 1500;
+            font-size: 5rem;
+            letter-spacing: 4px;
+            text-decoration-line: none;
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #0f0f0f;
 
 
-}
+
+        }
 
         .dd {
             float: none;
@@ -134,11 +89,12 @@ text-decoration: none;
             text-decoration-line: none;
             text-align: left;
             padding: 3px;
-            
+
 
 
         }
-        .hh{  
+
+        .hh {
             float: none;
             width: 100%;
             font-weight: 400;
@@ -147,9 +103,18 @@ text-decoration: none;
             text-decoration-line: none;
             text-align: left;
             padding: 3px;
-        }  
+        }
 
-        .wrapper1{  
+        .wrapper {
+
+            display: grid;
+            grid-template-columns: 200px;
+            grid-gap: 10px;
+            justify-content: left;
+
+        }
+
+        /*.dd {
             float: none;
             width: 100%;
             font-weight: 400;
@@ -158,71 +123,21 @@ text-decoration: none;
             text-decoration-line: none;
             text-align: left;
             padding: 3px;
-        }  
-
-             
-        .ff {
-
-            float: none;
-            width: 100%;
-            font-weight: 400;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            text-decoration-line: none;
-            text-align: left;
-            padding: 1px;
-
-}
-  /*.wrapper2{  
-            float: none;
-            width: 100%;
-            font-weight: 400;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            text-decoration-line: none;
-            text-align: right;
-            padding: 3px;
-        }  
-
-        .wrapper3{  
-            float: none;
-            width: 100%;
-            font-weight: 400;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            text-decoration-line: none;
-            text-align: left;
-            padding: 3px;
-        }  
-
-        .wrapper4{  
-            float: none;
-            width: 100%;
-            font-weight: 400;
-            font-size: 2rem;
-            letter-spacing: 1px;
-            text-decoration-line: none;
-            text-align: right;
-            padding: 3px;
-        }  */
-    
-   
-
-  
-}
+        }*/
+    }
 </style>
 
 <body>
-   
+
     <nav class="nav">
         <a href="a">First Link</a>
         <a href="a">Second Link</a>
         <a href="a">Third Link</a>
         <a href="a">Fourth Link</a>
-     </nav>
+    </nav>
 
-    
-    <div class="dd" >
+
+    <div class="dd">
         <h2> Item1</h2>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequatur voluptas nisi sunt accusamus nemo
         nesciunt enim porro perferendis dicta harum suscipit sed explicabo ipsum odit. Maiores incidunt aspernatur
@@ -235,29 +150,30 @@ text-decoration: none;
 
 
 
-<div style="overflow:auto">
-    <div class="hh">
-        <h2> Item2</h2>
- 
+    <div style="overflow:hidden">
+        <div class="hh">
+            <h2> Item2</h2>
 
-    <div class="wrapper1">
-        <img src="original.png" >
+            <div class="wrapper">
+
+                <img src="original.png">
+
+
+                <img src="original.png">
+
+
+                <img src="original.png">
+
+
+                <img src="original.png">
+            </div>
+        </div>
+
     </div>
-   <!--<div class="wrapper2">
-        <img src="original.png" >
-    </div>
-    <div class="wrapper3">
-        <img src="original.png" >
-    </div>
-    <div class="wrapper4">
-        <img src="original.png" >
-    </div>
 
 
 
-
-
-    <div class="ff" >
+    <div class="ff">
         <h2>Item3</h2>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, consequatur voluptas nisi sunt accusamus
         nemo nesciunt enim porro perferendis dicta harum suscipit sed explicabo ipsum odit. Maiores incidunt
@@ -267,7 +183,7 @@ text-decoration: none;
         laboriosam, sint blanditiis!
 
     </div>
---> 
+
 </body>
 
 </html>
